@@ -1,0 +1,854 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "{% TIMEDATE %}",
+  "containerVersion": {
+    "path": "",
+    "accountId": "{% ACCOUNT_ID %}",
+    "containerId": "0000000000",
+    "containerVersionId": "0",
+    "container": {
+      "path": "",
+      "accountId": "{% ACCOUNT_ID %}",
+      "containerId": "0000000000",
+      "name": "reporting.dev.plx.mk",
+      "publicId": "{% GTM_ID %}",
+      "usageContext": ["WEB"],
+      "fingerprint": "1670931762693",
+      "tagManagerUrl": "",
+      "features": {
+        "supportUserPermissions": true,
+        "supportEnvironments": true,
+        "supportWorkspaces": true,
+        "supportGtagConfigs": false,
+        "supportBuiltInVariables": true,
+        "supportClients": false,
+        "supportFolders": true,
+        "supportTags": true,
+        "supportTemplates": true,
+        "supportTriggers": true,
+        "supportVariables": true,
+        "supportVersions": true,
+        "supportZones": true
+      },
+      "tagIds": []
+    },
+    "tag": [
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "tagId": "6",
+        "name": "GA4 - Telephone Click",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "click_to_call"
+          },
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "action"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "click"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "phone_number"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Click Text}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "page_path"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Page Path}}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "TAG_REFERENCE",
+            "key": "measurementId",
+            "value": "GA4 Configuration"
+          }
+        ],
+        "fingerprint": "1670945126482",
+        "firingTriggerId": ["8"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_SET"
+        }
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "tagId": "7",
+        "name": "GA4 Configuration",
+        "type": "gaawc",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "sendPageView",
+            "value": "true"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableSendToServerContainer",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "measurementId",
+            "value": "{% MEASUREMENT_ID %}"
+          }
+        ],
+        "fingerprint": "1670941855121",
+        "firingTriggerId": ["2147479553"],
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_SET"
+        }
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "tagId": "9",
+        "name": "GA4 - Email Click",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "click_to_mail"
+          },
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "action"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "click"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "email_address"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Click Text}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "page_path"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Page Path}}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "TAG_REFERENCE",
+            "key": "measurementId",
+            "value": "GA4 Configuration"
+          }
+        ],
+        "fingerprint": "1670944380737",
+        "firingTriggerId": ["4"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_SET"
+        }
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "tagId": "12",
+        "name": "GA4 - Form Submission",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "form_submission"
+          },
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "action"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "form_submission"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "page_path"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Page Path}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "form_id"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{PLX - FORM ID}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "form_name"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{PLX - Form Name}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "button_text"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Click Text}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "enquiry_type"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{PLX - Enquiry Type}}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "TAG_REFERENCE",
+            "key": "measurementId",
+            "value": "GA4 Configuration"
+          }
+        ],
+        "fingerprint": "1672929142477",
+        "firingTriggerId": ["28"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_SET"
+        }
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "tagId": "27",
+        "name": "GA4 - Scroll Depth",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "sendEcommerceData",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "eventName",
+            "value": "scroll"
+          },
+          {
+            "type": "LIST",
+            "key": "eventParameters",
+            "list": [
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "percent_scrolled"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Scroll Depth Threshold}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "page_path"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "{{Page Path}}"
+                  }
+                ]
+              },
+              {
+                "type": "MAP",
+                "map": [
+                  {
+                    "type": "TEMPLATE",
+                    "key": "name",
+                    "value": "action"
+                  },
+                  {
+                    "type": "TEMPLATE",
+                    "key": "value",
+                    "value": "scroll"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "TAG_REFERENCE",
+            "key": "measurementId",
+            "value": "GA4 Configuration"
+          }
+        ],
+        "fingerprint": "1671018311323",
+        "firingTriggerId": ["26"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_SET"
+        }
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "triggerId": "4",
+        "name": "PLX - Email Click",
+        "type": "LINK_CLICK",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Click URL}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "mailto:"
+              }
+            ]
+          }
+        ],
+        "waitForTags": {
+          "type": "BOOLEAN",
+          "value": "false"
+        },
+        "checkValidation": {
+          "type": "BOOLEAN",
+          "value": "false"
+        },
+        "waitForTagsTimeout": {
+          "type": "TEMPLATE",
+          "value": "2000"
+        },
+        "uniqueTriggerId": {
+          "type": "TEMPLATE"
+        },
+        "fingerprint": "1670941509292"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "triggerId": "8",
+        "name": "PLX - Telephone Click",
+        "type": "LINK_CLICK",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Click URL}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "tel:"
+              }
+            ]
+          }
+        ],
+        "waitForTags": {
+          "type": "BOOLEAN",
+          "value": "false"
+        },
+        "checkValidation": {
+          "type": "BOOLEAN",
+          "value": "false"
+        },
+        "waitForTagsTimeout": {
+          "type": "TEMPLATE",
+          "value": "2000"
+        },
+        "uniqueTriggerId": {
+          "type": "TEMPLATE"
+        },
+        "fingerprint": "1670942941673"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "triggerId": "24",
+        "name": "PLX - Form Submission (All)",
+        "type": "FORM_SUBMISSION",
+        "waitForTags": {
+          "type": "TEMPLATE"
+        },
+        "checkValidation": {
+          "type": "TEMPLATE"
+        },
+        "waitForTagsTimeout": {
+          "type": "TEMPLATE",
+          "value": "2000"
+        },
+        "uniqueTriggerId": {
+          "type": "TEMPLATE"
+        },
+        "fingerprint": "1671016339009"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "triggerId": "26",
+        "name": "PLX - Scroll Trigger",
+        "type": "SCROLL_DEPTH",
+        "fingerprint": "1671017552432",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "verticalThresholdUnits",
+            "value": "PERCENT"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "verticalThresholdsPercent",
+            "value": "10, 25, 50, 75"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "verticalThresholdOn",
+            "value": "true"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "triggerStartOption",
+            "value": "WINDOW_LOAD"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "horizontalThresholdOn",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "triggerId": "28",
+        "name": "All CF7 Forms",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "plx_form"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1671527672018"
+      }
+    ],
+    "variable": [
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "variableId": "5",
+        "name": "PLX - FORM ID",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "plx_data"
+          }
+        ],
+        "fingerprint": "1670941509292"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "variableId": "11",
+        "name": "PLX - GA4 ID",
+        "type": "c",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "{% MEASUREMENT_ID %}"
+          }
+        ],
+        "fingerprint": "1670942017216",
+        "formatValue": {}
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "variableId": "13",
+        "name": "PLX - Form Name",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "plx_form_name"
+          }
+        ],
+        "fingerprint": "1670943442575",
+        "formatValue": {}
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "variableId": "15",
+        "name": "PLX - Enquiry Type",
+        "type": "v",
+        "parameter": [
+          {
+            "type": "INTEGER",
+            "key": "dataLayerVersion",
+            "value": "2"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "setDefaultValue",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "name",
+            "value": "plx_enquiry_type"
+          }
+        ],
+        "fingerprint": "1670943901498",
+        "formatValue": {}
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "variableId": "25",
+        "name": "PLX - User-Provided Data (Automatic)",
+        "type": "awec",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "mode",
+            "value": "AUTO"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableElementBlocking",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1671017934062",
+        "formatValue": {}
+      }
+    ],
+    "builtInVariable": [
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "PAGE_URL",
+        "name": "Page URL"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "PAGE_HOSTNAME",
+        "name": "Page Hostname"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "PAGE_PATH",
+        "name": "Page Path"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "REFERRER",
+        "name": "Referrer"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "EVENT",
+        "name": "Event"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "CLICK_ELEMENT",
+        "name": "Click Element"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "CLICK_CLASSES",
+        "name": "Click Classes"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "CLICK_ID",
+        "name": "Click ID"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "CLICK_TARGET",
+        "name": "Click Target"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "CLICK_URL",
+        "name": "Click URL"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "CLICK_TEXT",
+        "name": "Click Text"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "FORM_ELEMENT",
+        "name": "Form Element"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "FORM_CLASSES",
+        "name": "Form Classes"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "FORM_ID",
+        "name": "Form ID"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "FORM_TARGET",
+        "name": "Form Target"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "FORM_URL",
+        "name": "Form URL"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "FORM_TEXT",
+        "name": "Form Text"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "SCROLL_DEPTH_THRESHOLD",
+        "name": "Scroll Depth Threshold"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "SCROLL_DEPTH_UNITS",
+        "name": "Scroll Depth Units"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "SCROLL_DEPTH_DIRECTION",
+        "name": "Scroll Direction"
+      }
+    ],
+    "fingerprint": "1673431902540",
+    "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/190484823/containers/98676162/versions/0?apiLink=version"
+  }
+}

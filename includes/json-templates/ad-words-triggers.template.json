@@ -1,0 +1,42 @@
+{
+  "accountId": "{% ACCOUNT_ID %}",
+  "containerId": "0000000000",
+  "triggerId": "{% TRIGGER_ID %}",
+  "name": "{% TRIGGER_NAME %}",
+  "type": "CUSTOM_EVENT",
+  "customEventFilter": [
+    {
+      "type": "EQUALS",
+      "parameter": [
+        {
+          "type": "TEMPLATE",
+          "key": "arg0",
+          "value": "{{_event}}"
+        },
+        {
+          "type": "TEMPLATE",
+          "key": "arg1",
+          "value": "plx_form"
+        }
+      ]
+    }
+  ],
+  "filter": [
+    {
+      "type": "EQUALS",
+      "parameter": [
+        {
+          "type": "TEMPLATE",
+          "key": "arg0",
+          "value": "{{PLX - FORM ID}}"
+        },
+        {
+          "type": "TEMPLATE",
+          "key": "arg1",
+          "value": "{% FORM_ID %}"
+        }
+      ]
+    }
+  ],
+  "fingerprint": "1671017956186"
+}

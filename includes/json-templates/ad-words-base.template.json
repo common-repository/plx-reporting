@@ -1,0 +1,440 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "{% DATETIME %}",
+  "containerVersion": {
+    "path": "",
+    "accountId": "{% ACCOUNT_ID %}",
+    "containerId": "0000000000",
+    "containerVersionId": "0",
+    "container": {
+      "path": "",
+      "accountId": "{% ACCOUNT_ID %}",
+      "containerId": "0000000000",
+      "name": "reporting.dev.plx.mk",
+      "publicId": "{% GTM_ID %}",
+      "usageContext": ["WEB"],
+      "fingerprint": "1670931762693",
+      "tagManagerUrl": "",
+      "features": {
+        "supportUserPermissions": true,
+        "supportEnvironments": true,
+        "supportWorkspaces": true,
+        "supportGtagConfigs": false,
+        "supportBuiltInVariables": true,
+        "supportClients": false,
+        "supportFolders": true,
+        "supportTags": true,
+        "supportTemplates": true,
+        "supportTriggers": true,
+        "supportVariables": true,
+        "supportVersions": true,
+        "supportZones": true
+      },
+      "tagIds": []
+    },
+    "tag": [
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "tagId": "29",
+        "name": "PLX - Google Ads - Conv. Linker",
+        "type": "gclidw",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "enableCrossDomain",
+            "value": "false"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableUrlPassthrough",
+            "value": "false"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableCookieOverrides",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1675699473594",
+        "firingTriggerId": ["2147479553"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_SET"
+        }
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "tagId": "30",
+        "name": "PLX - Google Ads - Calls From Website",
+        "type": "awcc",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "phoneConversionNumber",
+            "value": "0"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionId",
+            "value": "{{PLX - Google Ads - Conversion ID}}"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionLabel",
+            "value": "0"
+          }
+        ],
+        "fingerprint": "1675702393262",
+        "firingTriggerId": ["2147479553"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_SET"
+        }
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "tagId": "31",
+        "name": "PLX - Google Ads - Remarketing Pixel",
+        "type": "sp",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "enableConversionLinker",
+            "value": "true"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableDynamicRemarketing",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionCookiePrefix",
+            "value": "_gcl"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionId",
+            "value": "{{PLX - Google Ads - Conversion ID}}"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "customParamsFormat",
+            "value": "NONE"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "rdp",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1675702384350",
+        "firingTriggerId": ["2147479553"],
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_SET"
+        }
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "tagId": "32",
+        "name": "PLX - Google Ads - Click To Call",
+        "type": "awct",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "enableNewCustomerReporting",
+            "value": "false"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableConversionLinker",
+            "value": "true"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableProductReporting",
+            "value": "false"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableEnhancedConversion",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionCookiePrefix",
+            "value": "_gcl"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableShippingData",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionId",
+            "value": "{{PLX - Google Ads - Conversion ID}}"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionLabel",
+            "value": "0"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "rdp",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1675702873329",
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_SET"
+        }
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "tagId": "33",
+        "name": "PLX - Google Ads - Click To Email",
+        "type": "awct",
+        "parameter": [
+          {
+            "type": "BOOLEAN",
+            "key": "enableNewCustomerReporting",
+            "value": "false"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableConversionLinker",
+            "value": "true"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableProductReporting",
+            "value": "false"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableEnhancedConversion",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionCookiePrefix",
+            "value": "_gcl"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableShippingData",
+            "value": "false"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionId",
+            "value": "{{PLX - Google Ads - Conversion ID}}"
+          },
+          {
+            "type": "TEMPLATE",
+            "key": "conversionLabel",
+            "value": "0"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "rdp",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1675702962312",
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "monitoringMetadata": {
+          "type": "MAP"
+        },
+        "consentSettings": {
+          "consentStatus": "NOT_SET"
+        }
+      }
+    ],
+    "trigger": [],
+    "variable": [
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "variableId": "21",
+        "name": "PLX - Google Ads - Conversion ID",
+        "type": "c",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "value",
+            "value": "0"
+          }
+        ],
+        "fingerprint": "1670948227142",
+        "formatValue": {}
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "variableId": "25",
+        "name": "PLX - User-Provided Data (Automatic)",
+        "type": "awec",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "mode",
+            "value": "AUTO"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "enableElementBlocking",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1671017934062",
+        "formatValue": {}
+      }
+    ],
+    "builtInVariable": [
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "PAGE_URL",
+        "name": "Page URL"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "PAGE_HOSTNAME",
+        "name": "Page Hostname"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "PAGE_PATH",
+        "name": "Page Path"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "REFERRER",
+        "name": "Referrer"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "EVENT",
+        "name": "Event"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "CLICK_ELEMENT",
+        "name": "Click Element"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "CLICK_CLASSES",
+        "name": "Click Classes"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "CLICK_ID",
+        "name": "Click ID"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "CLICK_TARGET",
+        "name": "Click Target"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "CLICK_URL",
+        "name": "Click URL"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "CLICK_TEXT",
+        "name": "Click Text"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "FORM_ELEMENT",
+        "name": "Form Element"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "FORM_CLASSES",
+        "name": "Form Classes"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "FORM_ID",
+        "name": "Form ID"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "FORM_TARGET",
+        "name": "Form Target"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "FORM_URL",
+        "name": "Form URL"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "FORM_TEXT",
+        "name": "Form Text"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "SCROLL_DEPTH_THRESHOLD",
+        "name": "Scroll Depth Threshold"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "SCROLL_DEPTH_UNITS",
+        "name": "Scroll Depth Units"
+      },
+      {
+        "accountId": "{% ACCOUNT_ID %}",
+        "containerId": "0000000000",
+        "type": "SCROLL_DEPTH_DIRECTION",
+        "name": "Scroll Direction"
+      }
+    ],
+    "fingerprint": "1675702977049",
+    "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/190484823/containers/98676162/versions/0?apiLink=version"
+  }
+}
